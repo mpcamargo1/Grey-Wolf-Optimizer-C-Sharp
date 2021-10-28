@@ -1,0 +1,16 @@
+/home/marcos/Documentos/C#/GWO/bin/Debug/net5.0/GWO
+/home/marcos/Documentos/C#/GWO/bin/Debug/net5.0/GWO.deps.json
+/home/marcos/Documentos/C#/GWO/bin/Debug/net5.0/GWO.runtimeconfig.json
+/home/marcos/Documentos/C#/GWO/bin/Debug/net5.0/GWO.runtimeconfig.dev.json
+/home/marcos/Documentos/C#/GWO/bin/Debug/net5.0/GWO.dll
+/home/marcos/Documentos/C#/GWO/bin/Debug/net5.0/ref/GWO.dll
+/home/marcos/Documentos/C#/GWO/bin/Debug/net5.0/GWO.pdb
+/home/marcos/Documentos/C#/GWO/obj/Debug/net5.0/GWO.csproj.AssemblyReference.cache
+/home/marcos/Documentos/C#/GWO/obj/Debug/net5.0/GWO.GeneratedMSBuildEditorConfig.editorconfig
+/home/marcos/Documentos/C#/GWO/obj/Debug/net5.0/GWO.AssemblyInfoInputs.cache
+/home/marcos/Documentos/C#/GWO/obj/Debug/net5.0/GWO.AssemblyInfo.cs
+/home/marcos/Documentos/C#/GWO/obj/Debug/net5.0/GWO.csproj.CoreCompileInputs.cache
+/home/marcos/Documentos/C#/GWO/obj/Debug/net5.0/GWO.dll
+/home/marcos/Documentos/C#/GWO/obj/Debug/net5.0/ref/GWO.dll
+/home/marcos/Documentos/C#/GWO/obj/Debug/net5.0/GWO.pdb
+/home/marcos/Documentos/C#/GWO/obj/Debug/net5.0/GWO.genruntimeconfig.cache
