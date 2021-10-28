@@ -6,7 +6,7 @@ class WolvesGWO{
 
 	private const int AGENT = 100;
 	private const int DIMENSION = 2;
-	private const int MAX_IT = 10000;
+	private const int MAX_IT = 50000;
 
 	private static int alpha;
 	private static int beta;
@@ -117,14 +117,14 @@ class WolvesGWO{
 							double a2 = 2*a*r1 - a;
 							double c2 = 2*r2;
 							double dBeta = (c2*WolvesGWO.betaPos[j] - WolvesGWO.wolves[i,j]);
-							double x2 = (WolvesGWO.alphaPos[j] - (a2*dBeta));
+							double x2 = (WolvesGWO.betaPos[j] - (a2*dBeta));
 
 							r1 = random.NextDouble();
 							r2 = random.NextDouble();
 							double a3 = 2*a*r1 - a;
 							double c3 = 2*r2;
 							double dDelta = (c3*WolvesGWO.deltaPos[j] - WolvesGWO.wolves[i,j]);
-							double x3 = (WolvesGWO.alphaPos[j] - (a3*dDelta));
+							double x3 = (WolvesGWO.deltaPos[j] - (a3*dDelta));
 
 							WolvesGWO.wolves[i,j] = (x1+x2+x3)/3;
 
