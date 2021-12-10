@@ -8,4 +8,4 @@
 
 # Compilar
  - Visual Studio (Windows)
- - Com o Terminal, navegue até a pasta raiz do projeto e execute 'dotnet run' 
+ - Com o Terminal, navegue até a pasta raiz do projeto e execute 'dotnet run' (Linux)
