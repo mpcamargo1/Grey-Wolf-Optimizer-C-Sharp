@@ -75,7 +75,11 @@ class WolvesGWO{
 								Buffer.BlockCopy(WolvesGWO.wolves,WolvesGWO.alpha*8*WolvesGWO.DIMENSION,WolvesGWO.betaPos	,0,WolvesGWO.DIMENSION*8);
 								Buffer.BlockCopy(WolvesGWO.wolves,WolvesGWO.beta*8*WolvesGWO.DIMENSION,WolvesGWO.deltaPos,0,WolvesGWO.DIMENSION*8);
 
+								WolvesGWO.alpha = i;
+                                                                WolvesGWO.beta  = aux_index_alpha;
+                                                                WolvesGWO.delta = aux_index_beta;
 
+						
 
 					}
 					else if(result > fitness(WolvesGWO.betaPos) && result < fitness(WolvesGWO.alphaPos)){
@@ -85,6 +89,8 @@ class WolvesGWO{
 								Buffer.BlockCopy(WolvesGWO.wolves,i*8*WolvesGWO.DIMENSION,WolvesGWO.betaPos,0,WolvesGWO.DIMENSION*8);
 								Buffer.BlockCopy(WolvesGWO.wolves,WolvesGWO.beta*8*WolvesGWO.DIMENSION,WolvesGWO.deltaPos,0,WolvesGWO.DIMENSION*8);
 
+								WolvesGWO.beta = i;
+                                                                WolvesGWO.delta = aux_index_beta;
 					}
 					else if (result > fitness(WolvesGWO.deltaPos) && result < fitness(WolvesGWO.betaPos)){
 								WolvesGWO.delta = i;
@@ -143,9 +149,9 @@ class WolvesGWO{
 
 	private static double function(double[] x){
 		//return 0.26*(Math.Pow(x[0],2) + Math.Pow(x[1],2)) - 0.48*x[0]*x[1];  // Matyas Function
-		return Math.Pow(x[0] + 10,2) + Math.Pow(x[1] + 10,2) + Math.Exp(-Math.Pow(x[0],2)-Math.Pow(x[1],2)); // Brent  Function
+		//return Math.Pow(x[0] + 10,2) + Math.Pow(x[1] + 10,2) + Math.Exp(-Math.Pow(x[0],2)-Math.Pow(x[1],2)); // Brent  Function
 		//return 100*(Math.Sqrt(Math.Abs(x[1] - 0.01*Math.Pow(x[0],2)))) + 0.01*Math.Abs(x[0] + 10); // Bukin N.6 Function
-		//return Math.Pow(Math.Pow(x[0],2) + x[1]- 11,2) + Math.Pow(x[0] + Math.Pow(x[1],2) - 7,2);  // Himmelblau Function
+		return Math.Pow(Math.Pow(x[0],2) + x[1]- 11,2) + Math.Pow(x[0] + Math.Pow(x[1],2) - 7,2);  // Himmelblau Function
 	}
 
 
